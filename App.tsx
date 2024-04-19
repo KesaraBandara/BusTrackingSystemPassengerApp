@@ -1,3 +1,4 @@
+/* eslint-disable prettier/prettier */
 /**
  * Sample React Native App
  * https://github.com/facebook/react-native
@@ -8,15 +9,15 @@
 import React from 'react';
 import {StatusBar} from 'react-native';
 
-import HomeScreen from './src/screens/HomeScreen';
-// import HomeMap from './src/components/HomeMap';
+// import HomeScreen from './src/screens/HomeScreen';
+import DestinationSearch from './src/screens/DestinationSearch'; 
 
 function App(): React.JSX.Element {
   return (
     <>
       <StatusBar barStyle="dark-content" />
-      <HomeScreen />
-      {/* <HomeMap /> */}
+      {/* <HomeScreen /> */}
+      <DestinationSearch />
     </>
   );
 }
