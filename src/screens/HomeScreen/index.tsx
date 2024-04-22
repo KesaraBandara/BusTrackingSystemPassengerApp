@@ -50,7 +50,7 @@ const App = () => {
       setError('Location permission not granted');
       return;
     }
-  
+
     Geolocation.getCurrentPosition(
       position => {
         const { latitude, longitude } = position.coords;
@@ -64,7 +64,7 @@ const App = () => {
   };
 
   const getWeather = async (latitude: number, longitude: number) => {
-    const apiKey = '17c13aa4feb2b57368e50927e079a5e6';  // Replace with your actual API key
+    const apiKey = '';
     const url = `https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&units=metric&appid=${apiKey}`;
 
     try {
